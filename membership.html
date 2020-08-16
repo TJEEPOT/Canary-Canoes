@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Membership</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="i/favicon.ico"/> <!-- strangely, Edge doesn't support local favicons. Works in other browsers -->
+</head>
+<body>
+	<nav>
+		<div class="menuContainer">
+			<div class="menuLink">
+				<a href="clubhouse.html"><br>Clubhouse<img alt="Clubhouse" src="i/clubhouse.png"></a> 
+			</div>
+			<div class="menuLink">
+				<a href="team.html"><br>Team<img alt="Team" src="i/team.jpg"></a> 
+			</div>
+			<div class="menuLink">
+				<a href="training.html"><br>Programmes<img alt="Programmes" src="i/programmes.jpeg"></a>
+			</div>
+			<div class="menuLink">
+				<a href="achievements.html"><br>Achievements<img alt="Achievements" src="i/achievement.png"></a>
+			</div>
+			<div class="menuLink">
+				<a href="news.html"><br>News<img alt="News" src="i/news.jpeg"></a>			
+			</div>
+			<div class="menuLink menuLinkMember"> <!-- Pull through all menuLink CSS then apply new code specific for this mouseover -->
+				<a href="membership.html"><br>Membership<img alt="Membership" src="i/membership.jpeg"></a>
+			</div>
+		</div>
+	</nav>
+	<div class="topWrap">
+		<div id="menuBlock1"></div><div id="menuBlock2"></div><div id="menuBlock3"></div>
+	</div>
+	<header>
+	<div id="imageBox">
+		<a href="index.html">
+		<div id="title"><br><p>Home > </p><h1>Membership</h1></div>
+		</a>
+		<div class="imgContainer">
+			<div id="imgFade"></div>
+			<img alt="Membership" src="i/membership.jpg"/>
+		</div>		
+	</div>
+	</header>
+	<div class="contentWrap">
+		<aside class="contentLeft"></aside>
+		<section class="contentMid">
+			<h2>Join Us</h2>
+			<p>If you're looking to join, you're welcome to come down to the clubhouse and meet with us! We have coffee evenings on the second 
+			Tuesday of every month, and a chance to meet the team the first Thursday every month. If you decide to join us, 
+			you can find our prices below. Additionally, members can log in below to access their personal timetable and member forums.</p>
+			<div class="flexTable"> <!-- reusing table from achievements.html -->
+				<div class="fTGroup">
+					<div class="fTcol2">
+						<div class="fTCell fTHead fTHeadMember">2017 Membership</div>
+						<div class="fTCell fTCellMember"><p>Children: £320</p>
+						<p>Intermediate Children and Adults: £410</p>
+						<p>Payable in quarterly or yearly installments.</p></div>
+					</div>
+				</div>
+				<div class="fTGroup">
+					<div class="fTcol2">
+						<div class="fTCell fTHead fTHeadMember">British Canoeing Certificates</div>
+						<div class="fTCell fTCellMember"><p>Prices available upon request.</p></div>
+					</div>
+				</div>
+			</div>
+			<h2>Member Sign-in:</h2>
+			<div class="logBox">
+				<form action="login.php">
+					<div id="loginIcon"><img src="i/login.png" alt=Login></div>
+					<div id="loginForm">
+						<label>Username:</label>
+						<input type="text" placeholder="Username" name="user" required>
+						<label>Password:</label>
+						<input type="password" placeholder="Password" name="pass" required>
+						<button type="submit">Login</button>
+						<span id="loginRemember"><input type="checkbox"> Remember me</span>
+						<button type="button">Cancel</button>
+						<div id="forgotPass"><a href="#">Forgotten Your Password?</a></div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<aside class="contentRight"></aside>
+		<div class="contentPush"></div>
+	</div>
+	<footer>
+		<div class="footerContent">
+			<div class="socialMedia">
+				<a href="https://www.facebook.com/Canary-Canoes-1109156685854192/"><img src="i/fb.png" alt="Facebook"/></a>
+				<a href="https://twitter.com/Canary_Canoes?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+					<img src="i/tw.png" alt="Twitter"/></a>
+				<a href="https://plus.google.com/+CanaryCanoes"><img src="i/gp.png" alt="Google Plus"/></a>
+			</div>
+			<div class="validation">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/></a>
+			<div class="copyright" role="contentinfo"> COPYRIGHT 2017 CANARY CANOES</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
